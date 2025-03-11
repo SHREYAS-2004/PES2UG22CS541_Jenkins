@@ -8,12 +8,15 @@ pipeline {
                     branches: [[name: '*/main']], 
                     userRemoteConfigs: [[url: 'https://github.com/SHREYAS-2004/PES2UG22CS541_Jenkins.git']]
                 ])
+                 
             }
         }
 
         stage('Build') {
             steps {
-                sh 'g++ main/hello.cpp -o main/output'
+                // sh 'g++ main/hello.cpp -o main/output'
+                echo 'Building...'
+                sh 'exit 1'
             }
         }
 
