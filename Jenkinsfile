@@ -14,9 +14,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                // sh 'g++ main/hello.cpp -o main/output'
-                echo 'Building...'
-                sh 'exit 1'
+                sh 'g++ main/hello.cpp -o main/output'
             }
         }
 
